@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para maratón</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <h1>Registro para maratón</h1>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="apellido">Ingrese su apellido:</label>
+            <input type="text" id="apellido" name="apellido"><br><br>
+
+            <label for="email">Ingrese su email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="fecha">Ingrese fecha nacimiento:</label>
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="archivo">Ficha médica (PDF):</label>
+            <input type="file" id="archivo" name="archivo" accept=".pdf">
+        </fieldset>
+
+        <fieldset>
+            <legend>Carrera</legend>
+
+            <label for="maraton">Seleccionar maratón:</label><br>
+            <input type="radio" id="2km" name="maraton" value="2km">
+            <label for="2km">2 km</label><br>
+            <input type="radio" id="5km" name="maraton" value="5km">
+            <label for="5km">5 km</label><br>
+            <input type="radio" id="10km" name="maraton" value="10km">
+            <label for="10km">10 km</label><br><br>
+
+            <label for="marca-remera">Seleccionar marca remera:</label>
+            <select id="marca-remera" name="marca-remera">
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+                <option value="puma">Puma</option>
+            </select><br><br>
+
+            <label>Seleccionar días disponibles:</label><br>
+            <input type="checkbox" id="lunes" name="dias" value="lunes">
+            <label for="lunes">Lunes</label><br>
+            <input type="checkbox" id="miercoles" name="dias" value="miercoles">
+            <label for="miercoles">Miércoles</label><br>
+            <input type="checkbox" id="viernes" name="dias" value="viernes">
+            <label for="viernes">Viernes</label><br><br>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
